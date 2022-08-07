@@ -1,0 +1,72 @@
+:root {
+  --sidebar-width: 500px;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row, nowrap;
+}
+.img-side-bar {
+  position: relative;
+  flex: 1;
+}
+.content {
+  flex: 2;
+}
+.img-side-bar {
+  width: var(--sidebar-width);
+}
+.img-side-bar img {
+  height: 100vh;
+  width: 100%;
+}
+.img-side-bar .logo {
+  width: 100%;
+  /* background-color: black; */
+  /* opacity: 0.3; */
+  position: absolute;
+  top: 180px;
+}
+.img-side-bar .logo .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-side-bar .logo .icon img {
+  padding-bottom: 20px;
+  width: 70px;
+  height: auto;
+}
+.img-side-bar .logo .text {
+  font-family: Norse-Bold, sans-serif;
+  font-size: 100px;
+  color: white;
+}
+.logo .text,
+.logo .icon {
+  padding: 10px;
+}
+.img-side-bar .footer {
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.4;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+}
+.img-side-bar .footer a {
+  color: white;
+}
