@@ -1,15 +1,13 @@
-:root {
-  --sidebar-width: 500px;
-}
 
 @font-face {
   font-family: Norse-Bold;
   src: url(/fonts/Norse-Bold.otf);
 }
-
 body {
   margin: 0;
   padding: 0;
+  font-family: "Public Sans", sans-serif;
+
 }
 .wrapper {
   display: flex;
@@ -20,19 +18,20 @@ body {
   flex: 1;
 }
 .content {
-  flex: 2;
-}
-.img-side-bar {
-  width: var(--sidebar-width);
-}
-.img-side-bar img {
   height: 100vh;
   width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-side-bar img {
+  height: 100vh;
+  /* width: 100%; */
 }
 .img-side-bar .logo {
   width: 100%;
-  /* background-color: black; */
-  /* opacity: 0.3; */
   position: absolute;
   top: 180px;
 }
@@ -57,9 +56,9 @@ body {
 }
 .img-side-bar .footer {
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 400;
   color: white;
-  opacity: 0.4;
+  opacity: 0.8;
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -69,4 +68,75 @@ body {
 }
 .img-side-bar .footer a {
   color: white;
+}
+.content-wrapper {
+  position: relative;
+  bottom: 150px;
+}
+.content .intro-text {
+  margin: 250px 50px 40px 50px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.content .form-wrapper{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 2px 8px gray;
+    width: 100%;
+    
+}
+.content .form{
+    width: 75%;
+    margin:auto 50px;
+    padding: 80px 0 50px 0;
+}
+.form .title{
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    bottom: 40px;
+}
+.form .inputs{
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns:repeat(2, 1fr);
+}
+.form .inputs div{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.form .inputs input{
+    margin: 10px 0 4px 0;
+    padding: 4px;
+    border: 0;
+    border-bottom: 0.5px solid gray;
+}
+.form .inputs label{
+    font-weight: 100;
+    text-transform:uppercase;
+    font-size: 12px;
+}
+
+.content .btn{
+    margin: 30px 50px 20px 50px;
+}
+.content .btn button{
+    padding: 12px 40px;
+    border-radius: 9px;
+    border: 0;
+    background-color: #0059a7;
+    box-shadow: 4px 0px 12px rgba(157, 247, 255, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content .footer{
+    margin: 0px 55px;
+    font-weight: 400;
+}
+.content .footer a{
+    text-decoration: none;
+    color: #0059a7;
+    font-weight: 700;
 }

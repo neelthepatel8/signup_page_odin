@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        
     <title>Document</title>
   </head>
   <body>
@@ -31,16 +34,60 @@
         </div>
       </div>
       <div class="content">
-        <div class="intro-text">
-          <div class="1"></div>
-          <div class="2"></div>
+        <div class="content-wrapper">
+          <div class="intro-text">
+            <div class="1">
+              <p>
+                This is not a real online service! This is just a project built
+                during The Odin Project. This page is made entirely with HTML
+                and CSS.
+                <br />
+                So Signup <em>now</em> to get started!
+              </p>
+            </div>
+            <div class="2">
+              <p>You <em>know</em> you want to.</p>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <form class="form">
+              <div class="title">Let's do this!</div>
+              <div class="inputs">
+                <div class="fname">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" />
+                </div>
+                <div class="lname">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" />
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" />
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" />
+                </div>
+                <div class="pass">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" />
+                </div>
+                <div class="conf-pass">
+                    <label for="conf-pass">Confirm Password</label>
+                    <input type="password" id="conf-pass" />
+                </div>
+              </div>
+          </div>
+          <div class="btn">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+          
+          <div class="footer">
+            Already have an account? <a href="#">Login</a>
+          </div>
         </div>
-        <div class="form">
-          <div class="title"></div>
-          <div class="inputs"></div>
-          <div class="btn"></div>
-        </div>
-        <div class="footer"></div>
       </div>
     </div>
   </body>
