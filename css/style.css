@@ -74,7 +74,7 @@ body {
   bottom: 150px;
 }
 .content .intro-text {
-  margin: 250px 50px 40px 50px;
+  margin: 250px 80px 40px 80px;
   font-weight: 700;
   font-size: 22px;
 }
@@ -86,7 +86,7 @@ body {
 }
 .content .form{
     width: 75%;
-    margin:auto 50px;
+    margin:auto 80px;
     padding: 80px 0 50px 0;
 }
 .form .title{
@@ -110,6 +110,9 @@ body {
     padding: 4px;
     border: 0;
     border-bottom: 0.5px solid gray;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 .form .inputs label{
     font-weight: 100;
@@ -118,7 +121,7 @@ body {
 }
 
 .content .btn{
-    margin: 30px 50px 20px 50px;
+    margin: 30px 80px 20px 80px;
 }
 .content .btn button{
     padding: 12px 40px;
@@ -132,7 +135,7 @@ body {
 }
 
 .content .footer{
-    margin: 0px 55px;
+    margin: 0px 85px;
     font-weight: 400;
 }
 .content .footer a{
